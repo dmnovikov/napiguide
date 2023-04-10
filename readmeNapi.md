@@ -23,17 +23,17 @@ NAPI руководство пользователя
 - :point_up: Компактный размер: 43х43 мм
   
 # Содержание
-- NAPI GPIO:
-  - [Using Boards Manager](#installing-with-boards-manager)
-  - [Using git version](#using-git-version)
+- [NAPI GPIO](#napi-gpio)
+- [Инсталляция NAPI Linux](#%D0%B8%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-napi-linux)
+  - [Готовим прошивку(#using-git-version)
   - [Using PlatformIO](#using-platformio)
   - [Building with make](#building-with-make)
 - [NAPI Linux Installation](#documentation)
 - [Issues and support](#issues-and-support)
 - [Contributing](#contributing)  
 - [License and credits](#license-and-credits)   
-
-## NAPI GPIO
+https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md#
+# NAPI GPIO
 
 :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
@@ -43,7 +43,7 @@ NAPI руководство пользователя
 
 
 
-## Инсталляция NAPI Linux
+# Инсталляция NAPI Linux
 
 :warning: Подходит любая microSD карта от 8Gb
 
@@ -51,7 +51,7 @@ NAPI руководство пользователя
 
  ![Napi front view](img/napi1.png)
 
-### Готовим прошивку
+## Готовим прошивку
 
 :point_up: Адрес прошивок: (https://packages.nnz-ipc.net/napi/)
 
@@ -233,3 +233,6 @@ sudo rkdeveloptool db rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
 - [NAPI images](https://packages.nnz-ipc.net/napi/)
 
 - [Rockpi S images (совместимы с NAPI)](https://wiki.radxa.com/RockpiS/downloads)
+
+
+[def]: #
