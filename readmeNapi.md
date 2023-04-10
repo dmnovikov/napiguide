@@ -25,7 +25,7 @@ NAPI руководство пользователя
 # Содержание
 - [NAPI GPIO](#napi-gpio)
 - [Инсталляция NAPI Linux](#%D0%B8%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-napi-linux)
-  - [Готовим прошивку(#using-git-version)
+  - [Готовим прошивку](#готовим-прошивку)
   - [Using PlatformIO](#using-platformio)
   - [Building with make](#building-with-make)
 - [NAPI Linux Installation](#documentation)
@@ -64,11 +64,11 @@ https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md#
  ![Napi front view](img/balena-3.png)
  ![Napi front view](img/balena-4.png)
 
-### Тестовая работа с SD карты
+:point_up: Вы можете работать с SD карты, без записи образа в NAND. При этом в "боевом" режиме рекомендуется работать с NAND
 
-Вы можете работать с SD карты, без записи образа в NAND. При этом в "боевом" режиме рекомендуется работать с NAND
+### Работа c NAPI через TTL-USB консоль 
 
-### Работа через TTL-USB консоль
+:point_up: Работает с любой прошивкой
 
  ![Napi front view](img/console-1.png)
 
