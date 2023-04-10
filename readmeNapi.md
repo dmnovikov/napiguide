@@ -57,6 +57,8 @@ https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md#
 
 :point_up: Адрес программы Balena для записи SD: (https://balena-etcher.com)
 
+:point_up: Адреса других ОС с сайта RADXA:(https://wiki.radxa.com/RockpiS/downloads))
+
 В программе Balena надо зашить на SD скачанный образ NAPI Linux
 
  ![Napi front view](img/balena-1.png)
