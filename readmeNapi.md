@@ -35,7 +35,7 @@ NAPI руководство пользователя
 
 ## NAPI GPIO
 
-```  :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются ```
+:warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
  ![Napi front view](img/gpio-1.png)
 
@@ -45,7 +45,7 @@ NAPI руководство пользователя
 
 ## Инсталляция NAPI Linux
 
-```:warning: Подходит любая microSD карта от 8Gb ```
+:warning: Подходит любая microSD карта от 8Gb
 
 <br>
 
