@@ -35,7 +35,7 @@ NAPI руководство пользователя
 
 ## NAPI GPIO
 
-```  :exclamation: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются ```
+```  :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются ```
 
  ![Napi front view](img/gpio-1.png)
 
@@ -45,7 +45,7 @@ NAPI руководство пользователя
 
 ## Инсталляция NAPI Linux
 
-```:exclamation: Подходит любая microSD карта от 8Gb ```
+```:warning: Подходит любая microSD карта от 8Gb ```
 
 <br>
 
@@ -53,9 +53,9 @@ NAPI руководство пользователя
 
 ### Готовим прошивку
 
-``` :boom: Адрес прошивок: https://packages.nnz-ipc.net/napi/ ```
+``` :point_up: Адрес прошивок: https://packages.nnz-ipc.net/napi/ ```
 
-``` :boom: Адрес программы Balena для записи SD: https://balena-etcher.com ```
+``` :point_up: Адрес программы Balena для записи SD: https://balena-etcher.com ```
 
 В программе Balena надо зашить на SD скачанный образ NAPI Linux
 
