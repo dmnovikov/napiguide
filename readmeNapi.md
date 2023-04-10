@@ -53,9 +53,9 @@ NAPI руководство пользователя
 
 ### Готовим прошивку
 
-``` :point_up: Адрес прошивок: https://packages.nnz-ipc.net/napi/ ```
+:point_up: Адрес прошивок: (https://packages.nnz-ipc.net/napi/)
 
-``` :point_up: Адрес программы Balena для записи SD: https://balena-etcher.com ```
+:point_up: Адрес программы Balena для записи SD: (https://balena-etcher.com)
 
 В программе Balena надо зашить на SD скачанный образ NAPI Linux
 
