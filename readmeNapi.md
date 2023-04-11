@@ -3,12 +3,15 @@ NAPI руководство пользователя
 
  ![Napi front view](img/napi1-1.png)
 
-# Быстрые ссылки
+# Содержание
 
-- [Latest release documentation](https://arduino-esp8266.readthedocs.io/en/3.1.2/)
-- [Current "git version" documentation](https://arduino-esp8266.readthedocs.io/en/latest/)
-- [Install git version](https://arduino-esp8266.readthedocs.io/en/latest/installing.html#using-git-version) ([sources](doc/installing.rst#using-git-version))
-
+- [Основные характеристики](#основные-характеристики)
+- [NAPI GPIO](#napi-gpio)
+- [Инсталляция Linux на SD](#инсталляция-linux-на-sd)
+- [Работа c NAPI через TTL-USB консоль](#работа-c-napi-через-ttl-usb-консоль)
+- [ Инсталяция Linux в память NAND](#инсталяция-linux-в-память-nand)
+- [Быстрые ссылки](#быстрые-ссылки)
+  
 # Основные характеристики
 
 - RK3308 processor (Cortex- A35 quard core)
@@ -22,17 +25,8 @@ NAPI руководство пользователя
 - 2.4мм GPIO 
 - :point_up: Компактный размер: 43х43 мм
   
-# Содержание
-- [NAPI GPIO](#napi-gpio)
-- [Инсталляция NAPI Linux](#%D0%B8%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-napi-linux)
-  - [Готовим прошивку](#готовим-прошивку)
-  - [Using PlatformIO](#using-platformio)
-  - [Building with make](#building-with-make)
-- [NAPI Linux Installation](#documentation)
-- [Issues and support](#issues-and-support)
-- [Contributing](#contributing)  
-- [License and credits](#license-and-credits)   
-https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md#
+
+
 # NAPI GPIO
 
 :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
@@ -147,8 +141,10 @@ DHCP.
 ssh root@<ip адрес NAPI>
 ```
 
-## Инсталяция Linux в память NAND (рекомендуется)
+## Инсталяция Linux в память NAND
 <br>
+
+:pimnt_up: Рекомендуем именно этот режим в длительной работе !
 
 1.  Устанавливаем на Хост-ПК (Linux) утилиту rkdeveloptool.
 В теримнале вводим команду для установки зависимостей сборки:
@@ -221,16 +217,13 @@ sudo rkdeveloptool db rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
     - Перезагружаем устройство
 
 
-### Лицензии и права ###
-
-- NAPI и NAPI Linux разработка ООО "Коминтех" для ООО "Ниеншанц-Автоматика"
-
-
-### Быстрые ссылки
+# Быстрые ссылки
 
 - [NAPI images](https://packages.nnz-ipc.net/napi/)
 
 - [Rockpi S images (совместимы с NAPI)](https://wiki.radxa.com/RockpiS/downloads)
 
 
-[def]: #
+# Лицензии и права ###
+
+- NAPI и NAPI Linux разработка ООО "Коминтех" для ООО "Ниеншанц-Автоматика
