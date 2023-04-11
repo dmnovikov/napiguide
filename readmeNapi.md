@@ -3,22 +3,22 @@ NAPI руководство пользователя
 
  ![Napi front view](img/napi1-1.png)
 
-# Содержание
+## Содержание
 
 - [NAPI руководство пользователя](#napi-руководство-пользователя)
-- [Содержание](#содержание)
-- [Основные характеристики](#основные-характеристики)
-- [NAPI GPIO](#napi-gpio)
-- [Инсталляция Linux на SD](#инсталляция-linux-на-sd)
-- [Работа c NAPI через TTL-USB консоль](#работа-c-napi-через-ttl-usb-консоль)
-  - [Получение доступ к управлению NAPI c Linux-хоста](#получение-доступ-к-управлению-napi-c-linux-хоста)
-  - [Получение доступ к управлению NAPI c Windows-хоста](#получение-доступ-к-управлению-napi-c-windows-хоста)
-- [Получение доступ к управлению NAPI по сети через SSH](#получение-доступ-к-управлению-napi-по-сети-через-ssh)
-- [Инсталяция Linux в память NAND](#инсталяция-linux-в-память-nand)
-- [Быстрые ссылки](#быстрые-ссылки)
-- [Лицензии и права](#лицензии-и-права)
+  - [Содержание](#содержание)
+  - [Основные характеристики](#основные-характеристики)
+  - [NAPI GPIO](#napi-gpio)
+  - [Инсталляция Linux на SD](#инсталляция-linux-на-sd)
+  - [Работа c NAPI через TTL-USB консоль](#работа-c-napi-через-ttl-usb-консоль)
+    - [Получение доступ к управлению NAPI c Linux-хоста](#получение-доступ-к-управлению-napi-c-linux-хоста)
+    - [Получение доступ к управлению NAPI c Windows-хоста](#получение-доступ-к-управлению-napi-c-windows-хоста)
+  - [Получение доступ к управлению NAPI по сети через SSH](#получение-доступ-к-управлению-napi-по-сети-через-ssh)
+  - [Инсталяция Linux в память NAND](#инсталяция-linux-в-память-nand)
+  - [Быстрые ссылки](#быстрые-ссылки)
+  - [Лицензии и права](#лицензии-и-права)
   
-# Основные характеристики
+## Основные характеристики
 
 - RK3308 processor (Cortex- A35 quard core)
 - NAPI Linux \ Ubuntu 20.04 \Debian 10 \ Yocto Linux (kernel 4.4)
@@ -33,7 +33,7 @@ NAPI руководство пользователя
   
 
 
-# NAPI GPIO
+## NAPI GPIO
 
 :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
@@ -43,7 +43,7 @@ NAPI руководство пользователя
 
 
 
-# Инсталляция Linux на SD
+## Инсталляция Linux на SD
 
 :warning: Подходит любая microSD карта от 8Gb
 
@@ -69,7 +69,7 @@ NAPI руководство пользователя
 
 :point_up: Вы можете работать с SD карты, без записи образа в NAND. При этом в "боевом" режиме рекомендуется работать с NAND
 
-# Работа c NAPI через TTL-USB консоль 
+## Работа c NAPI через TTL-USB консоль 
 
 :point_up: Работает с любой прошивкой
 
@@ -89,7 +89,7 @@ flow control: none
 
  ![Napi terminal view](img/console-3.png)
 
-## Получение доступ к управлению NAPI c Linux-хоста
+### Получение доступ к управлению NAPI c Linux-хоста
 <br>
 
 - Устанавливаем программу minicom:
@@ -99,7 +99,7 @@ sudo apt-get install minicom
 ```
 
  - Определяем название USB-TTL в системе. Как правило, это будет устройство /dev/ttyUSB0(1) или /dev/ttyACM0(1). Чтобы точно узнать какое устройство, можно воспользоваться командой  
-  ```dmesg | tail``` 
+  `dmesg | tail` 
 
  ![Napi terminal view](img/console-2.png)
 
@@ -120,7 +120,7 @@ password: napilinux *)
 
  ![Napi terminal view](img/console-4.png)
 
-## Получение доступ к управлению NAPI c Windows-хоста
+### Получение доступ к управлению NAPI c Windows-хоста
 <br>
 
 - Скачиваем и устанавливаем программу Putty ( https://putty.org.ru )
@@ -135,7 +135,7 @@ Saved Sessions — NA-PI
 ```
  ![Napi terminal view](img/console-5.png)
 
-# Получение доступ к управлению NAPI по сети через SSH
+## Получение доступ к управлению NAPI по сети через SSH
 
 По умолчанию на устройстве настроено автополучние IP-адреса по
 DHCP. 
@@ -143,11 +143,11 @@ DHCP.
 :point_up: Для определения IP-адреса NAPI можно использовать программы сканирования сети (Linux — Angry IP Scanner (https://angryip.org)/ Windows — Advanced IP Scanner (https://advanced-ip-scanner.com)
 
 
-```
+```bash
 ssh root@<ip адрес NAPI>
 ```
 
-# Инсталяция Linux в память NAND
+## Инсталяция Linux в память NAND
 <br>
 
 :point_up: Рекомендуем именно этот режим в длительной работе !
@@ -194,20 +194,20 @@ sudo cp rkdeveloptool /usr/local/bin/
 
 ![Napi terminal view](img/buttons.png)
 
-5.  Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится ```«ID 2207 : 330e»``` -  означает, что устройство определилось в системе;
+5.  Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится `«ID 2207 : 330e»` -  означает, что устройство определилось в системе;
 
-6. В терминале вводим команду ```rkdeveloptool ld``` , если плата
+6. В терминале вводим команду `rkdeveloptool ld` , если плата
 находится в режиме Maskкom, на экране появится сообщение 
-```
+```bash
 dmn@hp:~/rkdeveloptool$ ./rkdeveloptool ld
 DevNo=1	Vid=0x2207,Pid=0x330e,LocationID=101	Maskrom
 dmn@hp:~/rkdeveloptool$
 
 ```
 
-7. Скачиваем bootloader (https://dl.radxa.com/rockpis/images/loader/)  файл ```rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin``` и загружаем во внутреннюю память 
+7. Скачиваем bootloader (https://dl.radxa.com/rockpis/images/loader/)  файл `rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin` и загружаем во внутреннюю память 
   
-```
+```bash
 sudo rkdeveloptool db /path/to/rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
 
 ```
@@ -225,20 +225,20 @@ sudo rkdeveloptool db rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
 9. Если необходимо очистить внутреннюю память от загруженного
 образа
 
-    - Создаем пустой образ, вводя команду: ```dd if=/dev/zero of=./zero.img bs=4M count=10```
+    - Создаем пустой образ, вводя команду: `dd if=/dev/zero of=./zero.img bs=4M count=10`
     - Запускаем плату в режиме Maskrom
     - Загружаем bootloader
-    - Загружаем полученный образ ```rkdeveloptool wl 0 zero.img ```
+    - Загружаем полученный образ `rkdeveloptool wl 0 zero.img `
     - Перезагружаем устройство
 
 
-# Быстрые ссылки
+## Быстрые ссылки
 
 - [NAPI images](https://packages.nnz-ipc.net/napi/)
 
 - [Rockpi S images (совместимы с NAPI)](https://wiki.radxa.com/RockpiS/downloads)
 
 
-# Лицензии и права ###
+## Лицензии и права ###
 
 - NAPI и NAPI Linux разработка ООО "Коминтех" для ООО "Ниеншанц-Автоматика
