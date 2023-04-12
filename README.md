@@ -10,9 +10,9 @@
 ![Napi front view](img/napi1-1.png)
 
 
-## NAPI current gather (Токосборщик)
+## FrontControl NAPI Current Collector (Токосборщик)
 
-Guide: Coming soon
+[Guide: Руководство на русском языке](./currgather.md)
 
 ![Napi front view](img/curr-gather1.png)
 
