@@ -130,7 +130,7 @@ Saved Sessions — NA-PI
 
 ## Получение доступ к управлению NAPI по сети через SSH
 
-По умолчанию на устройстве настроено автополучние IP-адреса по
+По умолчанию на устройстве настроено автополучение IP-адреса по
 DHCP.
 
 :point_up: Для определения IP-адреса NAPI можно использовать программы сканирования сети (Linux — Angry IP Scanner (<https://angryip.org>)/ Windows — Advanced IP Scanner (<https://advanced-ip-scanner.com>)
@@ -206,7 +206,7 @@ sudo rkdeveloptool db /path/to/rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
 ```
 
 8.скачиваем образ системы (<https://packages.nnz-ipc.net/napi/>) и загружаем во
-внутреннюю память соответсвующий вашей конфигурации образ:
+внутреннюю память соответствующий вашей конфигурации образ:
 
 ```bash
 sudo rkdeveloptool db rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
