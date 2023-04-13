@@ -12,7 +12,7 @@
 
 ## FrontControl NAPI Current Collector (Токосборщик)
 
-[Guide: Руководство на русском языке](./currgather.md)
+[Guide: Руководство на русском языке](./readmeNapiFrontControl.md)
 
 ![Napi front view](img/curr-gather1.png)
 
