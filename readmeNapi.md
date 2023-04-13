@@ -147,8 +147,7 @@ ssh root@<ip адрес NAPI>
 В терминале вводим команду для установки зависимостей сборки:
 
 ```bash
-sudo apt-get install libudev-dev libusb-1.0-0-dev
-dh-autoreconf
+sudo apt-get install libudev-dev libusb-1.0-0-dev dh-autoreconf
 ```
 
 2.Копируем исходный код и собираем rkdeveloptool
@@ -161,7 +160,7 @@ autoreconf -i
 make
 ```
 
-:pick_ip: Если rkdeveloptool не компилируется необходимо применить патч:
+:pick_up: Если rkdeveloptool не компилируется необходимо применить патч:
 скачать (<https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch>)
 
 ```bash
