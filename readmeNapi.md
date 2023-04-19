@@ -1,6 +1,6 @@
 # NAPI руководство пользователя
 
- ![Napi front view](img/napi1-1.png)
+ ![Napi front view](img-n/napi1.png)
 
 ## Содержание
 
@@ -34,7 +34,7 @@
 
 :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
- ![Napi front view](img/gpio-1.png)
+ ![Napi front view](img-n/gpio1.png)
 
  ![Napi front view](img/gpio-2-2.png)
 
@@ -143,14 +143,14 @@ ssh root@<ip адрес NAPI>
 
 :point_up: Рекомендуем именно этот режим в длительной работе !
 
-1.Устанавливаем на Хост-ПК (Linux) утилиту rkdeveloptool.
+1. Устанавливаем на Хост-ПК (Linux) утилиту rkdeveloptool.
 В терминале вводим команду для установки зависимостей сборки:
 
 ```bash
 sudo apt-get install libudev-dev libusb-1.0-0-dev dh-autoreconf
 ```
 
-2.Копируем исходный код и собираем rkdeveloptool
+2. Копируем исходный код и собираем rkdeveloptool
 
 ```bash
 git clone https://github.com/rockchip-linux/rkdeveloptool
@@ -169,7 +169,7 @@ patch main.cpp -i main.patch
 
 и повторить команду `make`
 
-3.Копируем собранную программу в директорию с программами
+3. Копируем собранную программу в директорию с программами
 
 ```bash
 sudo cp rkdeveloptool /usr/local/bin/
@@ -178,17 +178,17 @@ sudo cp rkdeveloptool /usr/local/bin/
 :warning: Перед записью образа во внутреннюю память, SD Card должна быть
 извлечена
 
-4.Загружаем плату в режиме Maskrom;
+4. Загружаем плату в режиме Maskrom;
 
-- c помощью кабеля USB Type-C подключаем устройство к ПК в слот USB-A;
+   - c помощью кабеля USB Type-C подключаем устройство к ПК в слот USB-A;
 
-- нажимаем и удерживаем клавишу Maskrom, затем коротко нажимаем клавишу Reset не отпускаем Maskrom, через несколько секунд отпускаем Maskrom;
+   - нажимаем и удерживаем клавишу Maskrom, затем коротко нажимаем клавишу Reset не отпускаем Maskrom, через несколько секунд отпускаем Maskrom;
 
 ![Napi terminal view](img/buttons.png)
 
-5.Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится `«ID 2207 : 330e»` -  означает, что устройство определилось в системе;
+5. Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится `«ID 2207 : 330e»` -  означает, что устройство определилось в системе;
 
-6.В терминале вводим команду `rkdeveloptool ld` , если плата
+6. В терминале вводим команду `rkdeveloptool ld` , если плата
 находится в режиме Maskкom, на экране появится сообщение
 
 ```bash
@@ -197,31 +197,37 @@ DevNo=1 Vid=0x2207,Pid=0x330e,LocationID=101 Maskrom
 dmn@hp:~/rkdeveloptool$
 ```
 
-7.Скачиваем bootloader (<https://dl.radxa.com/rockpis/images/loader/>)  файл `rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin` и загружаем во внутреннюю память
+7. Скачиваем bootloader (<https://dl.radxa.com/rockpis/images/loader/>)  файл в зависимости от ревизии процессора 
+
+```
+rk3308_loader_uart0_m0_emmc_port_support_sd_20190717.bin -- rk3308
+rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin -- rk3308B-S
+```
+8. Загружаем во внутреннюю память
   
 ```bash
-sudo rkdeveloptool db /path/to/rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
+sudo rkdeveloptool db  <файл загрузчика>
 
 ```
 
-8.скачиваем образ системы (<https://packages.nnz-ipc.net/napi/>) и загружаем во
+9. Скачиваем образ системы (<https://packages.nnz-ipc.net/napi/>) и загружаем во
 внутреннюю память соответствующий вашей конфигурации образ:
 
 ```bash
-sudo rkdeveloptool db rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
+sudo rkdeveloptool db <файл образа>
 ```
 
 :boom: При успешной загрузке прошивки через некоторое время замигает
 красный индикатор.
 
-9.Если необходимо очистить внутреннюю память от загруженного
+10. Если необходимо очистить внутреннюю память от загруженного
 образа
 
-- Создаем пустой образ, вводя команду: `dd if=/dev/zero of=./zero.img bs=4M count=10`
-- Запускаем плату в режиме Maskrom
-- Загружаем bootloader
-- Загружаем полученный образ `rkdeveloptool wl 0 zero.img`
-- Перезагружаем устройство
+    - Создаем пустой образ, вводя команду: `dd if=/dev/zero of=./zero.img bs=4M count=10`
+    - Запускаем плату в режиме Maskrom
+    - Загружаем bootloader
+    - Загружаем полученный образ `rkdeveloptool wl 0 zero.img`
+    - Перезагружаем устройство
 
 ## Быстрые ссылки
 
