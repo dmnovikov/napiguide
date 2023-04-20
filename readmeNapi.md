@@ -34,7 +34,7 @@
 
 :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
- ![Napi front view](img-n/gpio1-1.png)
+ ![Napi front view](img-n/gpio1-1-2.png)
 
  ![Napi front view](img-n/gpio2.png)
 
