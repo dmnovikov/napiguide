@@ -34,9 +34,9 @@
 
 :warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
- ![Napi front view](img-n/gpio1.png)
+ ![Napi front view](img-n/gpio1-1.png)
 
- ![Napi front view](img/gpio-2-2.png)
+ ![Napi front view](img-n/gpio2.png)
 
 ## Инсталляция Linux на SD
 
@@ -65,7 +65,7 @@
 
 :point_up: Работает с любой прошивкой
 
- ![Napi front view](img/console-1.png)
+ ![Napi front view](img-n/uart0.png)
 
 ```text
 Параметры связи порта:
@@ -160,7 +160,7 @@ autoreconf -i
 make
 ```
 
-:pick_up: Если rkdeveloptool не компилируется необходимо применить патч:
+:point_up: Если rkdeveloptool не компилируется необходимо применить патч:
 скачать (<https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch>)
 
 ```bash
