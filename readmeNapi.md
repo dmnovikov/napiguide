@@ -36,7 +36,7 @@
 
  ![Napi front view](img-n/gpio1-1-2.png)
 
- ![Napi front view](img-n/gpio2.png)
+ ![Napi front view](img-n/gpio2-1.png)
 
 ## Инсталляция Linux на SD
 
