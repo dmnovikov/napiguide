@@ -1,4 +1,4 @@
-# FrontControl NAPI Current Collector (Токосборщик)
+# FrontControl NAPI Current Collector (Токо-сборщик)
 
 ## Содержание
 
