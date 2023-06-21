@@ -20,6 +20,8 @@
 
 [Guide: Руководство на русском языке](./frontcontrolcompact.md)
 
+![Napi front view](img-ng/hand2.png)
+
 ![Napi front view](img-ng/frontcontrolcompact-1-2.png)
 
 
