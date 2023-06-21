@@ -1,4 +1,7 @@
-# Napi Guide
+# Руковоства и схемы продуктов Front-xxx
+
+# HandBook of Front-xxx products
+
 
 ## NAPI GPIO and NAPI Linux guide 
 
@@ -25,4 +28,8 @@
 ![Napi front view](img-ng/frontcontrolcompact-1-2.png)
 
 
+## FrontNet FN-8pSFP+/10G (промышленный коммутатор L2)
 
+[Guide: Руководство на русском языке](./frontnet-l2.md)
+
+![FrontNet L2](img-l2/l2-1.png)
