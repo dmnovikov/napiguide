@@ -2,6 +2,18 @@
 
 ## Содержание
 
+- [Прошивка процессорного моудля NAPI из ОС Windows](#прошивка-процессорного-моудля-napi-из-ос-windows)
+  - [Содержание](#содержание)
+  - [Драйверы для работы](#драйверы-для-работы)
+  - [Loader и прошивки для устройств NAPI](#loader-и-прошивки-для-устройств-napi)
+  - [ШАГ 1. Установка драйвера rockusb](#шаг-1-установка-драйвера-rockusb)
+  - [ШАГ 2. Загрузка платы в режиме Maskrom](#шаг-2-загрузка-платы-в-режиме-maskrom)
+  - [Шаг 4. Прошивка bootloader](#шаг-4-прошивка-bootloader)
+  - [Шаг 5. Прошивка образа системы (NapiLinux)](#шаг-5-прошивка-образа-системы-napilinux)
+  - [Если что-то пошло не так](#если-что-то-пошло-не-так)
+  - [Ссылки](#ссылки)
+
+
 ## Драйверы для работы
 
 Необходимо скачать и установить драйверы для ОС Windows
@@ -12,6 +24,20 @@ RKDevTool on Windows : https://wiki.radxa.com/Rock5/install/rockchip-flash-tools
 (Прямая ссылка https://dl.radxa.com/tools/windows/RKDevTool_Release_v2.96-20221121.rar)
 
 RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
+
+## Loader и прошивки для устройств NAPI
+
+Необходимо скачать корректный для вашего устройства лоадер и прошивку. Для этого надо знать ревизию процессора (rk3308A или rk3308b).
+
+ - Бутлоадер для NaPi: https://dl.radxa.com/rockpis/images/loader/
+
+Выбор прошивки также зависит от ревизии процессора и от типа устройства, которое вы хотите прошить (процессорный модуль \ сборщик \ токо сборщик).
+
+- Прошивки для всех устойств на основе NaPi (Napilinux): https://packages.nnz-ipc.net/napi/
+
+:boom: Прошивки для процессорного модуля NAPI с процессором rk3308b находится по ссылке: https://packages.nnz-ipc.net/napi/nnz-napi-image/napi-rk3308b-s/
+
+:boom: Прошивки для токо-сборщика с процессором rk3308b находится по ссылке: https://packages.nnz-ipc.net/napi/nnz-frontcontrol-image/napi-rk3308b-s/
 
 ## ШАГ 1. Установка драйвера rockusb
 
@@ -88,4 +114,6 @@ RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
 
 Прошивки для NaPi (Napilinux): https://packages.nnz-ipc.net/napi/
 
+Бутлоадер для NaPi: https://dl.radxa.com/rockpis/images/loader/
 
+Описание и прошивка для Linux: https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md
