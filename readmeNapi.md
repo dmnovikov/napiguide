@@ -70,7 +70,7 @@
 ```text
 Параметры связи порта:
 
-baudrate: 1500000
+baudrate: 1500000 (в новой версии 115200)
 data bit: 8
 stop bit: 1
 parity: none
@@ -96,6 +96,9 @@ sudo apt-get install minicom
 
 ```bash
 sudo minicom -D /dev/ttyUSB0 -b 1500000
+
+в новой версии прошивки параметры другие 
+sudo minicom -D /dev/ttyUSB0 -b 115200
 ```
 
 Вы должны увидеть лог загрузки ядра и приглашение в ввести логин/пароль:
@@ -121,7 +124,7 @@ sudo minicom -D /dev/ttyUSB0 -b 1500000
 
 ```text
 Serial line — COM3;
-Speed — 1 500 000;
+Speed — 1 500 000; (в новой версии 115200)
 Connection type — Serial;
 Saved Sessions — NA-PI
 ```
@@ -189,7 +192,7 @@ sudo cp rkdeveloptool /usr/local/bin/
 5. Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится `«ID 2207 : 330e»` -  означает, что устройство определилось в системе;
 
 6. В терминале вводим команду `rkdeveloptool ld` , если плата
-находится в режиме Maskкom, на экране появится сообщение
+находится в режиме Maskrom, на экране появится сообщение
 
 ```bash
 dmn@hp:~/rkdeveloptool$ ./rkdeveloptool ld
