@@ -7,7 +7,9 @@
 
 [Guide: Руководство на русском языке](./readmeNapi.md)
 
-[Скоро: Как собрать NAPI Linux в системе YOCTO из исходных кодов](./soon.md)
+[Guide: Прошивка NAPI Linux (и других ОС) из ОС Windows](./napi-extra/napi-win-flash.md)
+
+[Links: Ссылки на прошивки и бутлоадеры](./napi-extra/napi-links.md)
 
 ![Napi front view](img/napi1-2.png)
 ![Napi front view](img/napi1-1.png)
