@@ -1,11 +1,8 @@
-# Руковоства и схемы продуктов Front-xxx
-
-# HandBook of Front-xxx products
-
+# Руководства и схемы продуктов NAPI и FrontControl
 
 ## NAPI GPIO and NAPI Linux guide 
 
-[Guide: Руководство на русском языке](./readmeNapi.md)
+[Guide: Руководство по процессорному модулю NAPI на русском языке](./readmeNapi.md)
 
 [Guide: Прошивка NAPI Linux (и других ОС) из ОС Windows](./napi-extra/napi-win-flash.md)
 
