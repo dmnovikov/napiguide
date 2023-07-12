@@ -1,26 +1,28 @@
 # FrontControl Collector Compact (Сборщик-компакт)
 
-
-....В процессе...
 Сборщик-компакт — система сбора, хранения и передачи данных через LTE\LORA\Ethernet сети на основе процессорного модуля NAPI
 
-![Napi front view](img-ng/all-2.png)
+![Napi front view](img-ng/hand1.png)
 
 ## Особенности платы
-
 - SOM: Napi - 4-х ядерный ARM процессор, 512MB ОЗУ, 4GB ПЗУ (NAND)
 - RS485 изолированный порт для подключения датчиков
 - Ethernet 100 Mbit
 - PCI-E слот для LTE модема или LORA модуля
 - Питание 9-36 или POE
-- Программное обеспечение: NAPI Linux *), Ubuntu, DietPI
-- Веб интерфейс для NAPI Linux. Настройка сети, Lora, протокола Modbus RTU\TCP
+- RTC (часы реального времени)
+- Программное обеспечение: [NapiLinux](./napilinux.md) *), Ubuntu, DietPI
+- Веб интерфейс для NapiLinux. Настройка сети, Lora, протокола Modbus RTU\TCP
+  
+![Napi front view](img-ng/all-2.png)
+
 
 ## Программное обеспечение
 
-Рекомендуем использовать модуль с NAPILinux
+Рекомендуем использовать [NapiLinux](./napilinux.md). В NapiLinux из коробки будет доступен [Веб-интерфейс](https://github.com/dmnovikov/napiguide/blob/main/readmeNapiFrontControl.md#веб-интерфейс) для настройки сети, настройки Lora,
+настройки датчиков для опроса через Modbus (rtu\tcp) а также мониторинг запущенных сервисов и свободного места. 
 
-## Доступность портов в системе NAPILinux
+## Доступность портов в системе NapiLinux
 
 :point_up: /dev/ttyS0 - консоль ввода\вывода
 Порт используется для отладки через TTL-USB устройство
